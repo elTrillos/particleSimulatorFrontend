@@ -1,0 +1,25 @@
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+mat-card {
+  flex: 1;
+  min-width: 380px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.broadcast-card {
+  max-width: 400px;
+}
+
+.canvas-card {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

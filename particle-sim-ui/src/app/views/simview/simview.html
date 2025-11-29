@@ -1,0 +1,29 @@
+<div class="main-container">
+  <mat-card class="broadcast-card">
+    <mat-card-header>
+      <mat-card-title>Incoming Broadcast</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <pre *ngIf="rawMessage; else waiting">{{ rawMessage }}</pre>
+      <ng-template #waiting>
+        <p><mat-spinner diameter="24"></mat-spinner> Waiting for broadcast...</p>
+      </ng-template>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="canvas-card">
+    <mat-card-header>
+      <mat-card-title>Particle Simulation View</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <canvas
+        #canvas
+        width="800"
+        height="800"
+        style="border: 1px solid #ccc; background-color: black;"
+      ></canvas>
+    </mat-card-content>
+  </mat-card>
+</div>
